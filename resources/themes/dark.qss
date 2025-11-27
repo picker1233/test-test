@@ -1,0 +1,268 @@
+/* Enhanced Minecraft Launcher Theme */
+/* Professional dark theme with animations and gradients */
+
+QMainWindow {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #0f0f23, stop:1 #1a1a2e);
+    color: #ffffff;
+}
+
+QWidget {
+    background: transparent;
+    color: #ffffff;
+    font-family: "Segoe UI", -apple-system, Arial, sans-serif;
+    font-size: 11px;
+}
+
+/* Enhanced Buttons with animations */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2d3748, stop:1 #1a202c);
+    border: 2px solid #4a5568;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #e2e8f0;
+    font-weight: 500;
+    min-height: 32px;
+    transition: all 0.2s ease;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #4a5568, stop:1 #2d3748);
+    border-color: #63b3ed;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 179, 237, 0.3);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #1a202c, stop:1 #2d3748);
+    transform: translateY(0px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+QPushButton:disabled {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #0f0f23, stop:1 #1a1a2e);
+    color: #4a5568;
+    border-color: #2d3748;
+    transform: none;
+}
+
+/* Enhanced ComboBox */
+QComboBox {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2d3748, stop:1 #1a202c);
+    border: 2px solid #4a5568;
+    border-radius: 6px;
+    padding: 6px 8px;
+    color: #e2e8f0;
+    min-width: 150px;
+    min-height: 28px;
+    selection-background-color: #2b6cb0;
+    transition: all 0.2s ease;
+}
+
+QComboBox:hover {
+    border-color: #63b3ed;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #4a5568, stop:1 #2d3748);
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+    border-left: 1px solid #4a5568;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2d3748, stop:1 #1a202c);
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #e2e8f0;
+}
+
+QComboBox QAbstractItemView {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2d3748, stop:1 #1a202c);
+    color: #e2e8f0;
+    border: 2px solid #4a5568;
+    border-radius: 6px;
+    selection-background-color: #3182ce;
+    outline: none;
+}
+
+/* Enhanced Console */
+QTextEdit {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #0d1117, stop:1 #161b22);
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    color: #00d4aa; /* Mint green for console output */
+    font-family: "JetBrains Mono", "Cascadia Code", "Consolas", monospace;
+    font-size: 10px;
+    padding: 8px;
+    selection-background-color: #264d73;
+}
+
+QTextEdit:focus {
+    border-color: #58a6ff;
+}
+
+/* Enhanced Progress Bar with animation */
+QProgressBar {
+    border: 2px solid #30363d;
+    border-radius: 10px;
+    text-align: center;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #161b22, stop:1 #0d1117);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    height: 24px;
+    min-width: 200px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #238636, stop:0.5 #56d364, stop:1 #238636);
+    border-radius: 6px;
+    border: 1px solid #2ea043;
+}
+
+/* Enhanced Labels */
+QLabel {
+    color: #e2e8f0;
+    font-weight: 400;
+}
+
+QLabel[styleClass="title"] {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Enhanced Status Bar */
+QStatusBar {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #21262d, stop:1 #30363d);
+    border-top: 2px solid #484f58;
+    color: #c9d1d9;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 8px;
+}
+
+/* Enhanced Splitter */
+QSplitter {
+    background: transparent;
+}
+
+QSplitter::handle {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #30363d, stop:1 #484f58);
+    border: 1px solid #656d76;
+}
+
+QSplitter::handle:horizontal {
+    width: 6px;
+    border-left: 2px solid #21262d;
+    border-right: 2px solid #21262d;
+}
+
+QSplitter::handle:vertical {
+    height: 6px;
+    border-top: 2px solid #21262d;
+    border-bottom: 2px solid #21262d;
+}
+
+QSplitter::handle:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #484f58, stop:1 #656d76);
+}
+
+/* Enhanced List Widget */
+QListWidget {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #161b22, stop:1 #0d1117);
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    color: #e2e8f0;
+    alternative-background-color: #0d1117;
+    selection-background-color: #1f6feb;
+    outline: none;
+    padding: 4px;
+}
+
+QListWidget::item {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QListWidget::item:selected {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #1f6feb, stop:1 #388bfd);
+    color: #ffffff;
+    border: 1px solid #58a6ff;
+}
+
+QListWidget::item:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #30363d, stop:1 #484f58);
+}
+
+/* Loading Animation */
+QProgressBar[progressBarClass="loading"] {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #161b22, stop:1 #0d1117);
+}
+
+QProgressBar[progressBarClass="loading"]::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #79c0ff, stop:0.3 #79c0ff, stop:0.6 #9db3e7, stop:1 #79c0ff);
+    border-radius: 6px;
+    animation: pulse 1.5s ease-in-out infinite;
+    border: 1px solid #388bfd;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1.0; }
+    100% { opacity: 0.8; }
+}
+
+/* Success Animation */
+QProgressBar[progressBarClass="success"] {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #1a7f37, stop:1 #0f5132);
+}
+
+QProgressBar[progressBarClass="success"]::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #56d364, stop:0.5 #238636, stop:1 #56d364);
+    border: 1px solid #2ea043;
+    animation: success 0.5s ease-out;
+}
+
+@keyframes success {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Error styling */
+QPushButton[errorButton="true"] {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #c92f2f, stop:1 #a61e4d);
+    border-color: #e53e3e;
+}
+
+QProgressBar[progressBarClass="error"]::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #f85149, stop:0.5 #ff7f00, stop:1 #f85149);
+    border: 1px solid #da3633;
+}
